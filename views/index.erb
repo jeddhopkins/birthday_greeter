@@ -1,10 +1,69 @@
+<style>
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+select {
+  width: 30%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type=submit], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+</style>
 <h1 style="text-align: center; font-weight: lighter; font-family: verdana; font-size: 80px"><p>Hello There!</p></h1>
 
-<h2 style="text-align:center; font-weight: lighter; font-family: verdana; font-size: 50px"><p>What's your name?</p></h2>
+<div align="center">
+  <h2 style="font-weight: lighter; font-family: verdana; font-size: 40px"><p>What's your name?</p></h2>
 
-<form>
-  <input type="text" name="name">
-</form>
+  <form action="/" method="post">
+    <input type="text" name="name">
+  </form>
+</div>
 
-<h2 style="text-align:center; font-weight: lighter; font-family: verdana; font-size: 50px"><p>When's your birthday?</p></h2>
+<div align="center">
+  <h2 style="font-weight: lighter; font-family: verdana; font-size: 40px"><p>When's your birthday?</p></h2>
+
+  <form action="/" method="post">
+    <label for="day">
+      Day:
+    </label>
+    <input type="text" name="day">
+    <label for="month">
+      Month:
+    </label>
+    <select>
+      <option value="jan">January</option>
+      <option value="feb">February</option>
+      <option value="mar">March</option>
+      <option value="apr">April</option>
+      <option value="may">May</option>
+      <option value="jun">June</option>
+      <option value="jul">July</option>
+      <option value="aug">August</option>
+      <option value="sep">September</option>
+      <option value="oct">October</option>
+      <option value="nov">November</option>
+      <option value="dec">December</option>
+    </select><br>
+    <div>
+      <input type="submit" value="GO!">
+    </div>
+  </form>
+</div>
