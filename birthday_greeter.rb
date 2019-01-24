@@ -7,7 +7,7 @@ class BirthdayGreeter < Sinatra::Base
   end
 
   post '/greet' do
-    "Hello Jedd"
+    erb(:greet)
   end
 
   run! if app_file == $0
