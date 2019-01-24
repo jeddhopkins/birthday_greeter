@@ -1,4 +1,4 @@
-require 'sinatra'
+require 'sinatra/base'
 
 class BirthdayGreeter < Sinatra::Base
 
@@ -6,8 +6,8 @@ class BirthdayGreeter < Sinatra::Base
     erb(:index)
   end
 
-  get '/greet' do
-
+  post '/greet' do
+    "Hello Jedd"
   end
 
   run! if app_file == $0
